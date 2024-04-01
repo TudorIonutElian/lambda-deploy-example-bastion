@@ -5,19 +5,19 @@ function initial_setup {
     sudo apt-get install curl
     sudo apt-get -y install nodejs npm
 
-    if [ -d "lambda-example-playground-func" ]; then rm -Rf lambda-example-playground-func; fi
+    if [ -d "lambda-deploy-example-bastion" ]; then rm -Rf lambda-deploy-example-bastion; fi
 }
 
 function loadExampleBastionLambda {
-    curl -L -o write-payload-func.zip https://github.com/TudorIonutElian/lambda-example-playground-func/archive/refs/heads/main.zip
+    curl -L -o write-payload-func.zip https://github.com/TudorIonutElian/lambda-deploy-example-bastion/archive/refs/heads/main.zip
 
-    unzip lambda-example-playground-func.zip -d lambda-example-playground-func
+    unzip lambda-deploy-example-bastion.zip -d lambda-deploy-example-bastion
 
-    mv lambda-example-playground-func/lambda-example-playground-func-main/* lambda-example-playground-func/
-    rm -r lambda-example-playground-func/lambda-example-playground-func-main
-    rm lambda-example-playground-func.zip
+    mv lambda-deploy-example-bastion/lambda-deploy-example-bastion-main/* lambda-deploy-example-bastion/
+    rm -r lambda-deploy-example-bastion/lambda-deploy-example-bastion-main
+    rm lambda-deploy-example-bastion.zip
 
-    cd lambda-example-playground-func
+    cd lambda-deploy-example-bastion
     npm install
     cd ../
 }
