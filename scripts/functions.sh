@@ -9,7 +9,7 @@ function initial_setup {
 }
 
 function loadExampleBastionLambda {
-    curl -L -o write-payload-func.zip https://github.com/TudorIonutElian/lambda-deploy-example-bastion/archive/refs/heads/main.zip
+    curl -L -o lambda-deploy-example-bastion-func.zip https://github.com/TudorIonutElian/lambda-deploy-example-bastion/archive/refs/heads/main.zip
 
     unzip lambda-deploy-example-bastion.zip -d lambda-deploy-example-bastion
 
