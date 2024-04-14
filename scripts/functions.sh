@@ -5,19 +5,19 @@ function initial_setup {
     sudo apt-get install curl
     sudo apt-get -y install nodejs npm
 
-    if [ -d "lambda-deploy-example-bastion" ]; then rm -Rf lambda-deploy-example-bastion; fi
+    if [ -d "example-lambda-bastion" ]; then rm -Rf example-lambda-bastion; fi
 }
 
 function loadExampleBastionLambda {
-    curl -L -o lambda-deploy-example-bastion-func.zip https://github.com/TudorIonutElian/lambda-deploy-example-bastion/archive/refs/heads/main.zip
+    curl -L -o example-lambda-bastion.zip https://github.com/TudorIonutElian/example-lambda-bastion/archive/refs/heads/main.zip
 
-    unzip lambda-deploy-example-bastion.zip -d lambda-deploy-example-bastion
+    unzip example-lambda-bastion.zip -d example-lambda-bastion
 
-    mv lambda-deploy-example-bastion/lambda-deploy-example-bastion-main/* lambda-deploy-example-bastion/
-    rm -r lambda-deploy-example-bastion/lambda-deploy-example-bastion-main
-    rm lambda-deploy-example-bastion.zip
+    mv example-lambda-bastion/example-lambda-bastion-main/* example-lambda-bastion/
+    rm -r example-lambda-bastion/example-lambda-bastion-main
+    rm example-lambda-bastion.zip
 
-    cd lambda-deploy-example-bastion
+    cd example-lambda-bastion
     npm install
     cd ../
 }
