@@ -4,10 +4,17 @@
 source ./scripts/functions.sh
 
 # Call the initial_setup function
+echo "Running some initial prerequisites..."
 initial_setup
 
+
+
 # Call the prepare_lambda function
+echo "Preparing the lambda function..."
 loadExampleBastionLambda
 
 # Call the terraform_init function
+echo "Initializing Terraform..."
 terraform_init
+
+echo "Runner finished successfully!"
