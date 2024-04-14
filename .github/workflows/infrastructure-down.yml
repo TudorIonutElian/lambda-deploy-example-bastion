@@ -1,4 +1,4 @@
-name: Deploy infrastructure
+name: Infrastructure destroy (infrastructure-down)
 # Trigger deployment only on push to main branch
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Deploy resources
+    name: Destroy resources
     runs-on: ubuntu-latest
     permissions: write-all
     env: 

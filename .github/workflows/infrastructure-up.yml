@@ -1,4 +1,4 @@
-name: Deploy infrastructure
+name: Deploy infrastructure (infrastructure-up)
 # Trigger deployment only on push to main branch
 on:
   push:
