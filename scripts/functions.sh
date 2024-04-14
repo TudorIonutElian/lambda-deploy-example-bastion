@@ -19,6 +19,7 @@ function loadExampleBastionLambda {
 
     cd example-lambda-bastion
     npm install
+    echo "Please update the lambda function with the correct values in the index.js file"
     cd ../
 }
 
