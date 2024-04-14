@@ -4,6 +4,6 @@
 module "lambda_deploy_example_bastion" {
   source = "./modules/data-archive"
   type = "zip"
-  source_dir = "lambda-deploy-example-bastion"
-  output_path = "lambda-deploy-example-bastion"
+  source_dir = "example-lambda-bastion"
+  output_path = "example-lambda-bastion"
 }
