@@ -13,9 +13,5 @@ initial_setup
 echo "Preparing the lambda function..."
 loadExampleBastionLambda
 
-# Call the terraform_init function
-echo "Initializing Terraform..."
-terraform_init
-
 echo "Runner almost successfully!"
 echo "Runner finished successfully!"
