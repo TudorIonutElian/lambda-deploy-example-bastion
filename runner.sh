@@ -7,11 +7,9 @@ source ./scripts/functions.sh
 echo "Running some initial prerequisites..."
 initial_setup
 
-
-
 # Call the prepare_lambda function
 echo "Preparing the lambda function..."
 loadExampleBastionLambda
 
-echo "Runner almost successfully!"
-echo "Runner finished successfully!"
+echo "Runner finished successfully!
+"echo "Runner finished successfully! 2"
