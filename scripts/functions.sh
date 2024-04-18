@@ -21,8 +21,3 @@ function loadExampleBastionLambda {
     npm install
     cd ../
 }
-
-function terraform_init {
-    terraform init
-    terraform plan
-}
