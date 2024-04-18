@@ -17,4 +17,5 @@ loadExampleBastionLambda
 echo "Initializing Terraform..."
 terraform_init
 
+echo "Runner almost successfully!"
 echo "Runner finished successfully!"
