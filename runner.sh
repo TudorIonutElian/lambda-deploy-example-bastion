@@ -11,4 +11,5 @@ initial_setup
 echo "Preparing the lambda function..."
 loadExampleBastionLambda
 
-echo "Runner finished successfully!"
+echo "Runner finished successfully!
+"echo "Runner finished successfully! 2"
